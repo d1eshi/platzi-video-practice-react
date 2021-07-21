@@ -2,9 +2,9 @@
 
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Test from './components/App';
+import App from './App';
 
 ReactDOM.render(
-  <Test name="d1eshi" />,
+  <App/>,
   document.getElementById('root')
 );

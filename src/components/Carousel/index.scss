@@ -1,0 +1,39 @@
+.categories__title {
+  background: #8f57fd;
+  color: white;
+  font-size: 16px;
+  margin-top: -16px;
+  position: absolute;
+  padding-left: 30px;
+  width: 100%;
+}
+
+.carousel {
+  overflow: auto;
+  padding-left: 30px;
+  width: 100%;
+  position: relative;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #8f57fd;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #9f72fa;
+    border-radius: 10px;
+  }
+}
+
+.carousel__container {
+  transition: 450ms -webkit-transform;
+  transition: 450ms transform;
+  transition: 450ms transform, 450ms -webkit-transform;
+  font-size: 0;
+  white-space: nowrap;
+  margin: 70px 0px;
+  padding-bottom: 10px;
+}

@@ -1,0 +1,13 @@
+@import './assets/styles/Vars.scss';
+@import './assets/styles/Media.scss';
+
+body {
+  margin: 0;
+  font-family: $theme-font;
+  background-color: red;
+  background-color: $main-color;
+}
+
+* {
+  box-sizing: border-box;
+}
