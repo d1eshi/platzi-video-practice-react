@@ -1,22 +1,35 @@
-/* eslint-disable import/extensions */
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable import/no-unresolved */
-
-import useMovies from 'hooks/useMovies.js'
-
-import Header from 'components/Header'
 import Search from 'components/Search'
 import Carousel from 'components/Carousel'
 import CarouselItem from 'components/CarouselItem'
-import Footer from 'components/Footer'
+import { useSelector } from 'react-redux'
+// import { connect } from 'react-redux'
 
-export default function HomePage() {
-  const movies = useMovies()
-
+export default function HomePage () {
+  // to get the data from redux state
+  const movies = useSelector(state => state)
   return (
     <>
-      <Header />
       <Search />
+      {
+        movies.searchResult.length > 0 &&
+          <Carousel title='Resultados de búsqueda'>
+            {
+              movies.searchResult?.map((movie) => (
+                <CarouselItem key={movie.id} {...movie} isList />
+              ))
+            }
+          </Carousel>
+      }
+
+      {movies.mylist.length > 0 &&
+        <Carousel title='Mi Lista'>
+          {
+            movies.mylist?.map((movie) => (
+              <CarouselItem key={movie.id} {...movie} isList />
+            ))
+          }
+        </Carousel>}
+
       <Carousel title='Tendencias'>
         {movies.trends?.map((movie) => (
           <CarouselItem key={movie.id} {...movie} />
@@ -28,7 +41,6 @@ export default function HomePage() {
           <CarouselItem key={movie.id} {...movie} />
         ))}
       </Carousel>
-      <Footer />
     </>
   )
 }

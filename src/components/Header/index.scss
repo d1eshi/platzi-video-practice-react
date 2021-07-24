@@ -21,8 +21,10 @@
       display: flex;
       cursor: pointer;
       img {
+        border-radius: 23px;
         margin-right: 8px;
-        width: 40px;
+        width: 100%;
+        object-fit: cover;
       }
     }
 
@@ -53,4 +55,7 @@
       display: block;
     }
   }
+}
+.greenHeader {
+   background-color: #21C08B;
 }

@@ -1,9 +1,7 @@
-/* eslint-disable arrow-parens */
 import { useEffect, useState } from 'react'
 
-export default function useMovies() {
+export default function useMovies () {
   const [movies, setMovies] = useState([])
-  console.log(movies)
 
   const API = 'https://mighty-reef-40013.herokuapp.com/api/movies'
 
