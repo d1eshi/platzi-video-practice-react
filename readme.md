@@ -19,7 +19,7 @@ Runs the app in the development mode.
 Open  [http://localhost:8080](http://localhost:8080/)  to view it in the browser.
 
 ## Preview 
-
+![](/preview.jpg)
 
 ## Notes
 This proyect was realized with the help of [Curso de React Router y Redux ](https://platzi.com/clases/react-router-redux/) 
