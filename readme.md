@@ -1,6 +1,6 @@
 # Platzi Video
 
-A basic website to see movies/series, with their info and rating too can reproduce the movie
+A basic website to see movies/series, with their info and rating too can reproduce the movie. Made in React, with the implementation of redux.
 
 ## Demo 
 If you want to see the demo of this proyect deployed, you can visit [Demo of the Proyect](https://platzi-video-practice-react.vercel.app/)
